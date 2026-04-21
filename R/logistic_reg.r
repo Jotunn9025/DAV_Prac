@@ -2,7 +2,9 @@ library(ggplot2)
 library(dplyr)
 df <- read.csv("titanic.csv", header=T)
 colSums(is.na(df))
-df$Age <- mean(df$Age, na.rm=T)
+
+df$Age[is.na(df$Age)] <- mean(df$Age, na.rm = TRUE)
+
 df$Cabin <- ifelse(is.na(df$Cabin)|df$Cabin=="",0,1)
 df$Sex <- recode(df$Sex,
         "male"=1,

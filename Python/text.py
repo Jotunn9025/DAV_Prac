@@ -1,10 +1,6 @@
 
 text = """
-NixOS is a Linux distribution based on the Nix package manager. It uses a 
-declarative configuration and allows reliable system upgrades. While the 
-learning curve can be steep, the ability to reproduce a system perfectly 
-across different machines is an absolute game-changer for developers. 
-I love how it handles dependencies without version conflicts!
+This is not a fun time rn
 """
 
 
